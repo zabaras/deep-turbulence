@@ -34,6 +34,8 @@ author = 'Nicholas Geneva'
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
 
+# Change homepage file to index
+master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
 
