@@ -1,4 +1,4 @@
-# Predicting Turbulent Fluid Flows with Generative Deep Learning
+# Turbulent Fluid Flows with Generative Deep Learning
 Multi-fidelity Generative Deep Learning Turbulent Flows [[FoDS]()][[ArXiv](https://arxiv.org/abs/2006.04731)]
 
 [Nicholas Geneva](http://nicholasgeneva.com/), [Nicholas Zabaras](https://cics.nd.edu)
