@@ -4,13 +4,13 @@ the loss in parallel on different GPUs for memory purposes.
 
 Original Implementation by Zhang, Rutgers University
 https://medium.com/huggingface/training-larger-batches-practical-tips-on-1-gpu-multi-gpu-distributed-setups-ec88c3e51255
-===
+=====
 Distributed by: Notre Dame SCAI Lab (MIT Liscense)
 - Associated publication:
 url: 
 doi: 
-github: 
-===
+github: https://github.com/zabaras/deep-turbulence
+=====
 '''
 import threading
 import functools
@@ -29,8 +29,7 @@ from torch.cuda._utils import _get_device_index
 
 torch_ver = torch.__version__[:3]
 
-__all__ = ['allreduce', 'DataParallelModel', 'DataParallelCriterion',
-           'patch_replication_callback']
+__all__ = ['allreduce', 'DataParallelCriterion']
 
 def allreduce(*inputs):
     """Cross GPU all reduce autograd operation for calculate mean and
@@ -173,7 +172,7 @@ class DataParallelINNModel(DataParallel):
         return inn_parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)], forward)
 
 def inn_parallel_apply(modules, inputs, kwargs_tup=None, devices=None, forward=True):
-    r"""Applies each `module` in :attr:`modules` in parallel on arguments
+    r"""Applies each `module` in parallel on arguments
     contained in :attr:`inputs` (positional) and :attr:`kwargs_tup` (keyword)
     on each of :attr:`devices`.
     Args:
@@ -245,7 +244,7 @@ class DataParallelCriterion(DataParallel):
     """
     Calculate loss in multiple-GPUs, which balance the memory usage.
     The targets are splitted across the specified devices by chunking in
-    the batch dimension. Please use together with :class:`encoding.parallel.DataParallelModel`.
+    the batch dimension.
     Reference:
         Hang Zhang, Kristin Dana, Jianping Shi, Zhongyue Zhang, Xiaogang Wang, Ambrish Tyagi,
         Amit Agrawal. “Context Encoding for Semantic Segmentation.

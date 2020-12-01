@@ -1,12 +1,12 @@
 '''
 Dataset and Dataloader classes for both numerical test cases 
-===
+=====
 Distributed by: Notre Dame SCAI Lab (MIT Liscense)
 - Associated publication:
 url: 
 doi: 
-github: 
-===
+github: https://github.com/zabaras/deep-turbulence
+=====
 '''
 from torch.utils.data import Dataset, DataLoader, TensorDataset
 from utils.log import Log

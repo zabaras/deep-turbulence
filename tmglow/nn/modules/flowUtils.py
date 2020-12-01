@@ -4,7 +4,7 @@ Distributed by: Notre Dame SCAI Lab (MIT Liscense)
 - Associated publication:
 url: 
 doi: 
-github: 
+github: https://github.com/zabaras/deep-turbulence
 =====
 '''
 import torch
@@ -16,7 +16,7 @@ from torch.autograd import Variable
 from torch.nn.modules.utils import _pair, _quadruple
 
 class Squeeze(nn.Module):
-    """Cqueezes feature map by reducing the dimensions of the feature
+    """Squeezes feature map by reducing the dimensions of the feature
     and increasing channel number in chunks.
 
     :param factor: factor to reduce feature dimensions by, defaults to 2

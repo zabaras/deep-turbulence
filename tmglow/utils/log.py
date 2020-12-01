@@ -1,13 +1,13 @@
 '''
 Logging utilities, used for colored outputs and saving
 training/testing data to log files.
-===
+=====
 Distributed by: Notre Dame SCAI Lab (MIT Liscense)
 - Associated publication:
 url: 
 doi: 
-github: 
-===
+github: https://github.com/zabaras/deep-turbulence
+=====
 '''
 # -*- coding: utf-8 -*-
 from time import localtime, strftime

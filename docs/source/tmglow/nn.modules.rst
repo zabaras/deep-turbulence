@@ -1,6 +1,9 @@
 nn.modules package
 ==================
 
+Submodules
+----------
+
 nn.modules.actNorm module
 -------------------------
 
@@ -61,6 +64,14 @@ nn.modules.misc module
 ----------------------
 
 .. automodule:: nn.modules.misc
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: nn.modules
    :members:
    :undoc-members:
    :show-inheritance:

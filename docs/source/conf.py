@@ -15,14 +15,13 @@ import sphinx_rtd_theme
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('../..'))
 sys.path.insert(0, os.path.abspath('../../tmglow'))
 
 from sphinx.ext.autodoc import between
 
 def setup(app):
     # Register a sphinx.ext.autodoc.between listener to ignore everything
-    # between lines that contain the word ======
+    # between lines that contain the word =====
     app.connect('autodoc-process-docstring', between('^.*=====.*$', exclude=True))
     return app
 
@@ -55,7 +54,7 @@ extensions = [
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
-# Fake import these packages when building
+# Fake import these packages when building, this will cause issues locally
 autodoc_mock_imports = ['torch', 'matplotlib', 'scipy']
 
 # List of patterns, relative to source directory, that match files and

@@ -1,12 +1,12 @@
 '''
 Random utilities
-===
+=====
 Distributed by: Notre Dame SCAI Lab (MIT Liscense)
 - Associated publication:
 url: 
 doi: 
-github: 
-===
+github: https://github.com/zabaras/deep-turbulence
+=====
 '''
 from zipfile import ZipFile
 from nn.tmGlow import TMGlow
@@ -37,9 +37,8 @@ def toTuple(a):
 def getGpuMemoryMap():
     """Get the current gpu usage.
 
-    Returns
-    -------
-    usage: dict
+    Returns:
+        usage: dict
         Keys are device ids as integers.
         Values are memory usage as integers in MB.
     """

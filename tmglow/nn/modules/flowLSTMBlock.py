@@ -4,7 +4,7 @@ Distributed by: Notre Dame SCAI Lab (MIT Liscense)
 - Associated publication:
 url: 
 doi: 
-github: 
+github: https://github.com/zabaras/deep-turbulence
 =====
 '''
 import sys, time

@@ -1,5 +1,5 @@
 Resources
-=======
+=========
 For additional information on the use of invertible neural networks, please refer to the following select papers:
 
 - D. Kingma, P. Dhariwal, Glow: Generative flow with invertible 1x1 convolutions, in: Advances in Neural Information Processing Systems, 2018, pp. 10215–10224. `[Link] <http://papers.nips.cc/paper/8224-glow-generative-flow-with-invertible-1x1-con>`_

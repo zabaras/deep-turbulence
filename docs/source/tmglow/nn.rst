@@ -5,9 +5,12 @@ Subpackages
 -----------
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 4
 
    nn.modules
+
+Submodules
+----------
 
 nn.tmGlow module
 ----------------
@@ -21,6 +24,14 @@ nn.trainFlowParallel module
 ---------------------------
 
 .. automodule:: nn.trainFlowParallel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: nn
    :members:
    :undoc-members:
    :show-inheritance:

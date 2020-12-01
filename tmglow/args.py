@@ -1,11 +1,11 @@
 '''
-======
+=====
 Distributed by: Notre Dame SCAI Lab (MIT Liscense)
 - Associated publication:
 url: 
 doi: 
-github: 
-======
+github: https://github.com/zabaras/deep-turbulence
+=====
 '''
 from pprint import pprint
 from dataclasses import dataclass
@@ -28,8 +28,8 @@ class BackwardStepConfig:
     ntrain: int = 48
     ntest: int = 4
     noise_std:float = 0.05
-    training_data_dir:str = '/scratch365/ngeneva/backward_step/setup/data'
-    testing_data_dir:str = '/scratch365/ngeneva/backward_step/setup/data'
+    training_data_dir:str = '../step-training/'
+    testing_data_dir:str = '../step-testing/'
 
     # Training/Loss parameters
     beta:float = 200
@@ -54,8 +54,8 @@ class CylinderConfig:
     ntrain: int = 96
     ntest: int = 4
     noise_std:float = 0.05
-    training_data_dir:str = '/scratch365/ngeneva/cylinder_array/setup/data'
-    testing_data_dir:str = '/scratch365/ngeneva/cylinder_array/setup/data'
+    training_data_dir:str = '../cylinder-training/'
+    testing_data_dir:str = '../cylinder-testing/'
 
     # Training/Loss parameters
     beta:float = 200
@@ -78,12 +78,39 @@ CONFIG_MAPPING = OrderedDict(
 )
 
 class Parser(argparse.ArgumentParser):
+    """Program arguments, only a few are listed in the documentation.
+
+    :param exp-dir: Directory to save experiments
+    :type exp-dir: string
+    :param exp-type: Experiment type
+    :type exp-type: string
+    :param parallel: Use parallel GPUs for training
+    :type parallel: bool
+    :param n_gpu: Number of GPUs to use for training, defaults to 1
+    :type n_gpu: int
+    :param training_data_dir: File directory to training data
+    :type training_data_dir: string
+    :param testing_data_dir: File directory to testing data
+    :type testing_data_dir: string
+    :param ntrain: Number of training data
+    :type ntrain: int
+    :param ntest: Number of testing data
+    :type ntest: int
+    :param epoch_start: Epoch to start at, will load pre-trained network
+    :type epoch_start: int
+    :param epochs: Number of epochs to train
+    :type epochs: int
+    :param lr: ADAM optimizer learning rate
+    :type lr: float
+
+    :note: Use `python main.py --help` for more information. Only serval key of arguments are listed here.
+    """
     def __init__(self):
         super(Parser, self).__init__(description='Read')
         self.add_argument('--exp-dir', type=str, default="./experiments", help='directory to save experiments')
         self.add_argument('--exp-type', type=str, default='backward-step', choices=['backward-step', 'cylinder-array'], help='experiment')
-        self.add_argument('--parallel', type=bool, default=1, help='use parallel GPUs for training')
-        self.add_argument('--n_gpu', type=int, default=-1, help='number of GPUs to use for training')   
+        self.add_argument('--parallel', type=bool, default=0, help='use parallel GPUs for training')
+        self.add_argument('--n_gpu', type=int, default=1, help='number of GPUs to use for training')   
         
         # model      
         self.add_argument('--enc-blocks', nargs="*", type=int, default=[4,4,4], help='list of encoder blocks')
@@ -112,7 +139,7 @@ class Parser(argparse.ArgumentParser):
         self.add_argument('--nel', type=int, default=64, help="number of elements/ collocation points")
 
         # training
-        self.add_argument('--epoch-start', type=int, default=0, help='epoch to start at, will load pre-trained network')
+        self.add_argument('--epoch_start', type=int, default=0, help='epoch to start at, will load pre-trained network')
         self.add_argument('--epochs', type=int, default=400, help='number of epochs to train')
         self.add_argument('--lr', type=float, default=0.001, help='ADAM learning rate')
         self.add_argument('--beta', type=float, default=None, help='temperature parameter in Boltzmann distribution')

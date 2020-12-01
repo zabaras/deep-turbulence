@@ -17,10 +17,10 @@ Extract the data using ``tar –xvzf data-set-name.tar.gz``, and move the traini
 
 The default directories in the config are:
 
-- ``/deep-turbulence/cylinder-training/``
-- ``/deep-turbulence/cylinder-testing/``
 - ``/deep-turbulence/step-training/``
 - ``/deep-turbulence/step-testing/``
+- ``/deep-turbulence/cylinder-training/``
+- ``/deep-turbulence/cylinder-testing/``
 
 But custom paths can be easily adjusted in the configuration file.
 
@@ -44,6 +44,7 @@ For example:
 - Train the model for the backward-step example: ``python main.py --exp-type cylinder-array``
 - Use a custom training directory: ``python main.py --training_data_dir <custom directory>``
 - Change number of epochs: ``python main.py --epochs <# epochs>``
+- Start a model from a particular epoch: ``python main.py --epoch_start <epoch>``
 
 .. warning::
     Memory constraints on the GPU will likely be of concern. Parallel training is supported but only on a single 
@@ -53,4 +54,4 @@ For example:
 4. Running Pre-trained Models
 -----------------------------
 Alternatively, you can skip the training and simply run a pre-trained models.
-These can be found in the ``example`` folder where there are several scripts that demonstrate how to load and test a model.
+These can be found in the ``examples`` folder where there are several scripts that demonstrate how to load and test a model.

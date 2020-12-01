@@ -1,6 +1,9 @@
 pc package
 ==========
 
+Submodules
+----------
+
 pc.grad1Filter module
 ---------------------
 
@@ -21,6 +24,14 @@ pc.physicsConstrained module
 ----------------------------
 
 .. automodule:: pc.physicsConstrained
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pc
    :members:
    :undoc-members:
    :show-inheritance:

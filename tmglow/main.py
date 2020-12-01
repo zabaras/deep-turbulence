@@ -2,13 +2,13 @@
 The main run file for training TM-Glow for both the backwards step 
 and cylinder array test cases which can be controlled through the
 arguments.
-===
+=====
 Distributed by: Notre Dame SCAI Lab (MIT Liscense)
 - Associated publication:
 url: 
 doi: 
-github: 
-===
+github: https://github.com/zabaras/deep-turbulence
+=====
 '''
 from args import Parser
 from nn.tmGlow import TMGlow
