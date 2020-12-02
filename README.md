@@ -4,7 +4,7 @@ Multi-fidelity Generative Deep Learning Turbulent Flows [[FoDS]()][[ArXiv](https
 [Nicholas Geneva](http://nicholasgeneva.com/), [Nicholas Zabaras](https://cics.nd.edu)
 
 ---
-[![Documentation Status](https://readthedocs.org/projects/deep-turbulence/badge/?version=latest)](https://deep-turbulence.readthedocs.io/en/latest/?badge=latest) ![dataset](https://zenodo.org/badge/DOI/10.5281/zenodo.4298896.svg) ![liscense](https://img.shields.io/github/license/zabaras/deep-turbulence)
+[![Documentation Status](https://readthedocs.org/projects/deep-turbulence/badge/?version=latest)](https://deep-turbulence.readthedocs.io/en/latest/?badge=latest) [![dataset](https://zenodo.org/badge/DOI/10.5281/zenodo.4298896.svg)](https://doi.org/10.5281/zenodo.4298896) [![liscense](https://img.shields.io/github/license/zabaras/deep-turbulence)](https://github.com/zabaras/deep-turbulence/blob/master/LICENSE)
 
 A novel multi-fidelity deep generative model is introduced for the surrogate modeling of high-fidelity turbulent flow fields given the solution of a computationally inexpensive but inaccurate low-fidelity solver.
 
