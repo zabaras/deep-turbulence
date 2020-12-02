@@ -103,7 +103,7 @@ class Parser(argparse.ArgumentParser):
     :param lr: ADAM optimizer learning rate
     :type lr: float
 
-    :note: Use `python main.py --help` for more information. Only serval key of arguments are listed here.
+    :note: Use `python main.py --help` for more information. Only several key of arguments are listed here.
     """
     def __init__(self):
         super(Parser, self).__init__(description='Read')
