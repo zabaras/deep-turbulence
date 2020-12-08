@@ -55,7 +55,7 @@ extensions = [
 templates_path = ['_templates']
 
 # Fake import these packages when building, this will cause issues locally
-autodoc_mock_imports = ['torch', 'matplotlib', 'scipy']
+# autodoc_mock_imports = ['torch', 'matplotlib', 'scipy']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
