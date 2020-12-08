@@ -27,11 +27,3 @@ nn.trainFlowParallel module
    :members:
    :undoc-members:
    :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: nn
-   :members:
-   :undoc-members:
-   :show-inheritance:

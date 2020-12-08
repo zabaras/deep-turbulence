@@ -3,10 +3,19 @@
 Getting Started
 ===============
 
+.. figure:: _images/Fig04b.png
+   :width: 600
+   :align: center
+   :alt: TM-Glow
+
+   TM-Glow model. This model is comprised of a low-fidelity encoder that conditions a generative flow model to produce samples of high-fidelity field snapshots. LSTM affine blocks are introduced to pass information between time-steps using recurrent connections.
+
 1. Clone the repository
 -----------------------
 Start with cloning the repository to your local machine using:
  ``git clone git@github.com:zabaras/deep-turbulence.git``
+
+.. _download-data:
 
 2. Downloading Data
 -------------------
@@ -55,3 +64,13 @@ For example:
 -----------------------------
 Alternatively, you can skip the training and simply run a pre-trained models.
 These can be found in the ``examples`` folder where there are several scripts that demonstrate how to load and test a model.
+The general work flow of running a model for prediction is:
+
+1. Load model from the workspace zip file.
+2. Load testing data from compressed numpy array files.
+3. Run model and generate time-series samples.
+4. Post process and plot.
+
+.. note::
+    These programs require you download the *testing* data from the Zenodo data repository. The default location this data should be unzipped to is discussed in step :ref:`download-data`.
+    However, one can easily customize the data location in each script.
