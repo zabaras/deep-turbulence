@@ -1,12 +1,9 @@
-'''
-=====
-Distributed by: Notre Dame SCAI Lab (MIT Liscense)
-- Associated publication:
-url: 
-doi: 
-github: https://github.com/zabaras/deep-turbulence
-=====
-'''
+# Distributed by: Notre Dame SCAI Lab (MIT Liscense)
+# - Associated publication:
+# url: 
+# doi: 
+# github: https://github.com/zabaras/deep-turbulence
+
 import sys
 import time
 # sys.path.append("..")

@@ -1,12 +1,9 @@
-'''
-=====
-Distributed by: Notre Dame SCAI Lab (MIT Liscense)
-- Associated publication:
-url: 
-doi: 
-github: https://github.com/zabaras/deep-turbulence
-=====
-'''
+# Distributed by: Notre Dame SCAI Lab (MIT Liscense)
+# - Associated publication:
+# url: 
+# doi: 
+# github: https://github.com/zabaras/deep-turbulence
+
 from utils.utils import toNumpy, toTuple, getGpuMemoryMap
 from utils.viz import plotVelocityPred, plotNumericalPred
 from utils.log import Log
