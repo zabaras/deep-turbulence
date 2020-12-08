@@ -9,9 +9,6 @@ Subpackages
 
    nn.modules
 
-Submodules
-----------
-
 nn.tmGlow module
 ----------------
 
