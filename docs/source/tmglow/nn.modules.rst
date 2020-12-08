@@ -1,7 +1,6 @@
 nn.modules package
 ==================
 
-
 nn.modules.actNorm module
 -------------------------
 
@@ -65,3 +64,4 @@ nn.modules.misc module
    :members:
    :undoc-members:
    :show-inheritance:
+   

@@ -14,8 +14,9 @@ import sphinx_rtd_theme
 #
 import os
 import sys
+import mock
+
 sys.path.insert(0, os.path.abspath('.'))
-sys.path.insert(0, os.path.abspath('../..'))
 sys.path.insert(0, os.path.abspath('../../tmglow'))
 
 from sphinx.ext.autodoc import between
@@ -56,7 +57,8 @@ extensions = [
 templates_path = ['_templates']
 
 # Fake import these packages when building, this will cause issues locally
-autodoc_mock_imports = ['torch', 'matplotlib', 'scipy']
+# Does not seem to work properly
+# autodoc_mock_imports = ['torch', 'matplotlib', 'scipy']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.

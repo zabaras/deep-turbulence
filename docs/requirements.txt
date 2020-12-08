@@ -12,3 +12,6 @@ sphinxcontrib-napoleon==0.7
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.4
 numpy==1.19.1
+torch==1.6.0
+scipy==1.5.2
+matplotlib==3.3.2
