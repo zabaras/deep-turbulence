@@ -64,9 +64,9 @@ For example:
 4. Running Pre-trained Models
 -----------------------------
 Alternatively, you can skip the training and simply run a pre-trained models.
-These can be found in the ``examples`` folder where there are several scripts that demonstrate how to load and test a model.
-Download the pre-trained models from the Zenodo repository.
-These are the two files that are ``.zip`` folders, simply place them in the examples directory.
+Two programs for running pre-trained models can be found in the ``examples`` folder.
+The pre-trained models for each numerical example are found on the Zenodo data repository.
+Once downloaded, these files should be simply placed in the examples directory.
 
 .. warning::
     Do **not** unzip the workspace files, they should be just copied as is. TM-Glow will unzip them for you and read necessary data.
