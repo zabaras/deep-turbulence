@@ -20,8 +20,9 @@ Start with cloning the repository to your local machine using:
 2. Downloading Data
 -------------------
 To download both the training and testing data for both of the numerical examples, visit the following Zenodo repository.
-`https://doi.org/10.5281/zenodo.4298896 <https://doi.org/10.5281/zenodo.4298896>`_
+`https://doi.org/10.5281/zenodo.4311698 <https://doi.org/10.5281/zenodo.4311698>`_
 
+The data-sets are compressed tarfiles, notes that pre-trained models are also included in this repository.
 Extract the data using ``tar –xvzf data-set-name.tar.gz``, and move the training and testing data the desired directory.
 
 The default directories in the config are:
@@ -64,6 +65,12 @@ For example:
 -----------------------------
 Alternatively, you can skip the training and simply run a pre-trained models.
 These can be found in the ``examples`` folder where there are several scripts that demonstrate how to load and test a model.
+Download the pre-trained models from the Zenodo repository.
+These are the two files that are ``.zip`` folders, simply place them in the examples directory.
+
+.. warning::
+    Do **not** unzip the workspace files, they should be just copied as is. TM-Glow will unzip them for you and read necessary data.
+
 The general work flow of running a model for prediction is:
 
 1. Load model from the workspace zip file.
@@ -74,3 +81,4 @@ The general work flow of running a model for prediction is:
 .. note::
     These programs require you download the *testing* data from the Zenodo data repository. The default location this data should be unzipped to is discussed in step :ref:`download-data`.
     However, one can easily customize the data location in each script.
+
