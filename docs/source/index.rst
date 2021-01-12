@@ -7,7 +7,7 @@ Nicholas Geneva, Nicholas Zabaras
 Documentation transient multi-fidelity Glow (TM-Glow) used for predicting high-fidelity turbulence
 given a low-fidelity simulation.
 Please see the paper for additional information regarding the model used and the underlying
-theory `[FoDS] <https://arxiv.org/abs/2006.04731>`_ `[Arxivs] <https://arxiv.org/abs/2006.04731>`_.
+theory `[FoDS] <http://aimsciences.org//article/id/3a9f3d14-3421-4947-a45f-a9cc74edd097>`_ `[Arxivs] <https://arxiv.org/abs/2006.04731>`_.
 
 .. figure:: _images/Fig01b.png
    :width: 600

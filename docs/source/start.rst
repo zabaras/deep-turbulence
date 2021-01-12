@@ -22,17 +22,17 @@ Start with cloning the repository to your local machine using:
 To download both the training and testing data for both of the numerical examples, visit the following Zenodo repository.
 `https://doi.org/10.5281/zenodo.4311698 <https://doi.org/10.5281/zenodo.4311698>`_
 
-The data-sets are compressed tarfiles, notes that pre-trained models are also included in this repository.
+The data-sets are compressed tarfiles, note that pre-trained models are also included in this repository.
 Extract the data using ``tar –xvzf data-set-name.tar.gz``, and move the training and testing data the desired directory.
 
-The default directories in the config are:
+The default directories of the data in the config are:
 
 - ``/deep-turbulence/step-training/``
 - ``/deep-turbulence/step-testing/``
 - ``/deep-turbulence/cylinder-training/``
 - ``/deep-turbulence/cylinder-testing/``
 
-But custom paths can be easily adjusted in the configuration file.
+But custom paths can be easily adjusted through run parameters or explicitly in :class:`args`.
 
 3. Set-up Conda Python Environment
 ----------------------------------
@@ -61,11 +61,11 @@ For example:
     node (not multiple CPU) which can be controlled through ``--n_gpu`` and ``--parallel`` options. 
     Support is not provided for debugging GPU memory or parallel issues.
 
-4. Running Pre-trained Models
+5. Running Pre-trained Models
 -----------------------------
 Alternatively, you can skip the training and simply run a pre-trained models.
 Two programs for running pre-trained models can be found in the ``examples`` folder.
-The pre-trained models for each numerical example are found on the Zenodo data repository.
+The pre-trained models for each numerical example are found on the `Zenodo data repository <https://doi.org/10.5281/zenodo.4311698>`_.
 Once downloaded, these files should be simply placed in the examples directory.
 
 .. warning::

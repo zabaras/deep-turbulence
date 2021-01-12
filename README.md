@@ -1,5 +1,5 @@
 # Turbulent Fluid Flows with Generative Deep Learning
-Multi-fidelity Generative Deep Learning Turbulent Flows [[FoDS]()][[ArXiv](https://arxiv.org/abs/2006.04731)]
+Multi-fidelity Generative Deep Learning Turbulent Flows [[FoDS](http://aimsciences.org//article/id/3a9f3d14-3421-4947-a45f-a9cc74edd097)][[ArXiv](https://arxiv.org/abs/2006.04731)]
 
 [Nicholas Geneva](http://nicholasgeneva.com/), [Nicholas Zabaras](https://cics.nd.edu)
 
@@ -23,11 +23,18 @@ See requirements.txt for full dependency list.
 
 ## Citation
 Find this useful or like this work? Cite us with:
-```latex
+```bibtex
     @article{geneva2020multi,
-        title={Multi-fidelity Generative Deep Learning Turbulent Flows},
-        author={Geneva, Nicholas and Zabaras, Nicholas},
-        journal={arXiv preprint arXiv:2006.04731},
-        year={2020}
+        title = "Multi-fidelity generative deep learning turbulent flows",
+        author = "Nicholas Geneva","Nicholas Zabaras",
+        journal = "Foundations of Data Science",
+        volume = "2",
+        number = "2639-8001_2020_4_391",
+        pages = "391",
+        year = "2020",
+        note = "",
+        issn = "A0000-0002",
+        doi = "10.3934/fods.2020019",
+        url = "http://aimsciences.org/article/id/3a9f3d14-3421-4947-a45f-a9cc74edd097"
     }
 ```
