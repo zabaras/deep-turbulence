@@ -45,7 +45,6 @@ Here are a few questions that may perhaps come up.
             volume = "2",
             pages = "391",
             year = "2020",
-            note = "",
             issn = "A0000-0002",
             doi = "10.3934/fods.2020019",
             url = "http://aimsciences.org/article/id/3a9f3d14-3421-4947-a45f-a9cc74edd097"
