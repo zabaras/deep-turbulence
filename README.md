@@ -26,15 +26,14 @@ Find this useful or like this work? Cite us with:
 ```bibtex
     @article{geneva2020multi,
         title = "Multi-fidelity generative deep learning turbulent flows",
-        author = "Nicholas Geneva","Nicholas Zabaras",
-        journal = "Foundations of Data Science",
-        volume = "2",
-        number = "2639-8001_2020_4_391",
-        pages = "391",
-        year = "2020",
-        note = "",
-        issn = "A0000-0002",
-        doi = "10.3934/fods.2020019",
-        url = "http://aimsciences.org/article/id/3a9f3d14-3421-4947-a45f-a9cc74edd097"
+            author = "Nicholas Geneva and  Nicholas Zabaras",
+            journal = "Foundations of Data Science",
+            volume = "2",
+            pages = "391",
+            year = "2020",
+            note = "",
+            issn = "A0000-0002",
+            doi = "10.3934/fods.2020019",
+            url = "http://aimsciences.org/article/id/3a9f3d14-3421-4947-a45f-a9cc74edd097"
     }
 ```

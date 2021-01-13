@@ -40,10 +40,9 @@ Here are a few questions that may perhaps come up.
 
         @article{geneva2020multi,
             title = "Multi-fidelity generative deep learning turbulent flows",
-            author = "Nicholas Geneva","Nicholas Zabaras",
+            author = "Nicholas Geneva and  Nicholas Zabaras",
             journal = "Foundations of Data Science",
             volume = "2",
-            number = "2639-8001_2020_4_391",
             pages = "391",
             year = "2020",
             note = "",
